@@ -156,7 +156,6 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1712,8 +1711,7 @@ input[type="search"] {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
@@ -1730,8 +1728,7 @@ select[size] {
   height: auto;
 }
 input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
+input[type="radio"]:focus{
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1827,15 +1824,13 @@ input[type="search"] {
 .form-group {
   margin-bottom: 15px;
 }
-.radio,
-.checkbox {
+.radio {
   position: relative;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.radio label,
-.checkbox label {
+.radio label {
   min-height: 20px;
   padding-left: 20px;
   margin-bottom: 0;
@@ -1843,19 +1838,15 @@ input[type="search"] {
   cursor: pointer;
 }
 .radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
+.radio-inline input[type="radio"] {
   position: absolute;
   margin-top: 4px \9;
   margin-left: -20px;
 }
-.radio + .radio,
-.checkbox + .checkbox {
+.radio + .radio {
   margin-top: -5px;
 }
-.radio-inline,
-.checkbox-inline {
+.radio-inline{
   position: relative;
   display: inline-block;
   padding-left: 20px;
@@ -1864,29 +1855,23 @@ input[type="search"] {
   vertical-align: middle;
   cursor: pointer;
 }
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
+.radio-inline + .radio-inline {
   margin-top: 0;
   margin-left: 10px;
 }
 input[type="radio"][disabled],
-input[type="checkbox"][disabled],
 input[type="radio"].disabled,
-input[type="checkbox"].disabled,
-fieldset[disabled] input[type="radio"],
-fieldset[disabled] input[type="checkbox"] {
+fieldset[disabled] input[type="radio"]{
   cursor: not-allowed;
 }
 .radio-inline.disabled,
-.checkbox-inline.disabled,
 fieldset[disabled] .radio-inline,
-fieldset[disabled] .checkbox-inline {
+fieldset[disabled] {
   cursor: not-allowed;
 }
 .radio.disabled label,
-.checkbox.disabled label,
 fieldset[disabled] .radio label,
-fieldset[disabled] .checkbox label {
+fieldset[disabled] {
   cursor: not-allowed;
 }
 .form-control-static {
@@ -2009,13 +1994,9 @@ select[multiple].input-lg {
 .has-success .help-block,
 .has-success .control-label,
 .has-success .radio,
-.has-success .checkbox,
 .has-success .radio-inline,
-.has-success .checkbox-inline,
 .has-success.radio label,
-.has-success.checkbox label,
-.has-success.radio-inline label,
-.has-success.checkbox-inline label {
+.has-success.radio-inline label {
   color: #3c763d;
 }
 .has-success .form-control {
@@ -2039,13 +2020,9 @@ select[multiple].input-lg {
 .has-warning .help-block,
 .has-warning .control-label,
 .has-warning .radio,
-.has-warning .checkbox,
 .has-warning .radio-inline,
-.has-warning .checkbox-inline,
 .has-warning.radio label,
-.has-warning.checkbox label,
-.has-warning.radio-inline label,
-.has-warning.checkbox-inline label {
+.has-warning.radio-inline label{
   color: #8a6d3b;
 }
 .has-warning .form-control {
@@ -2069,13 +2046,9 @@ select[multiple].input-lg {
 .has-error .help-block,
 .has-error .control-label,
 .has-error .radio,
-.has-error .checkbox,
 .has-error .radio-inline,
-.has-error .checkbox-inline,
 .has-error.radio label,
-.has-error.checkbox label,
-.has-error.radio-inline label,
-.has-error.checkbox-inline label {
+.has-error.radio-inline label{
   color: #a94442;
 }
 .has-error .form-control {
@@ -2138,19 +2111,16 @@ select[multiple].input-lg {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .radio,
-  .form-inline .checkbox {
+  .form-inline .radio {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .radio label,
-  .form-inline .checkbox label {
+  .form-inline .radio label {
     padding-left: 0;
   }
-  .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
+  .form-inline .radio input[type="radio"] {
     position: relative;
     margin-left: 0;
   }
@@ -2159,15 +2129,12 @@ select[multiple].input-lg {
   }
 }
 .form-horizontal .radio,
-.form-horizontal .checkbox,
-.form-horizontal .radio-inline,
-.form-horizontal .checkbox-inline {
+.form-horizontal .radio-inline{
   padding-top: 7px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.form-horizontal .radio,
-.form-horizontal .checkbox {
+.form-horizontal .radio {
   min-height: 27px;
 }
 .form-horizontal .form-group {
@@ -2995,9 +2962,7 @@ tbody.collapse.in {
   left: auto;
 }
 [data-toggle="buttons"] > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"]{
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -3105,8 +3070,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 18px;
   border-radius: 6px;
 }
-.input-group-addon input[type="radio"],
-.input-group-addon input[type="checkbox"] {
+.input-group-addon input[type="radio"] {
   margin-top: 0;
 }
 .input-group .form-control:first-child,
@@ -3596,19 +3560,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .navbar-form .radio,
-  .navbar-form .checkbox {
+  .navbar-form .radio {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .navbar-form .radio label,
-  .navbar-form .checkbox label {
+  .navbar-form .radio label {
     padding-left: 0;
   }
-  .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
+  .navbar-form .radio input[type="radio"]{
     position: relative;
     margin-left: 0;
   }
