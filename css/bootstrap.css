@@ -372,7 +372,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   margin-bottom: 10px;
 }
 h1 small,
@@ -3673,11 +3673,11 @@ button.list-group-item-danger.active:focus {
 }
 
 .top-images{
-  margin-top: 8rem;
+  margin-top: 0;
 }
 @media (max-width: 991px) {
   .top-images{
-  margin-top: 65px;
+  margin-top: 30px;
   }
 }
 .rollover {
@@ -3713,10 +3713,10 @@ button.list-group-item-danger.active:focus {
 }
 
 .hillary{
-  margin-top: -25px;
+  margin-top: -5px;
 }
 .trump{
-  margin-top: -95px;
+  margin-top: -75px;
 }
 @media (max-width: 991px) {
   .trump{
@@ -3724,7 +3724,7 @@ button.list-group-item-danger.active:focus {
   }
 }
 .cycle{
-  margin-top: -115px;
+  margin-top: -95px;
 }
 @media (max-width: 1199px) {
   .cycle{
@@ -3738,7 +3738,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .granny{
-  margin-top: -25px;
+  margin-top: -10px;
 }
 @media (max-width: 991px) {
   .granny{
@@ -3760,7 +3760,7 @@ button.list-group-item-danger.active:focus {
   }
 }
 .margin-car{
-  margin-top: -180px;
+  margin-top: -160px;
 }
 @media (max-width: 1199px) {
   .margin-car{
@@ -3775,8 +3775,8 @@ button.list-group-item-danger.active:focus {
 
 @media (max-width: 991px) {
   .hillary {
-    margin-top: -25px;
-    margin-bottom: 37px;
+    margin-top: -15px;
+    margin-bottom: 30px;
   }
 }
 input[type=text] {
