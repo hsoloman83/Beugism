@@ -17,8 +17,7 @@ hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 audio,
@@ -31,8 +30,7 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-[hidden],
-template {
+[hidden] {
   display: none;
 }
 a {
@@ -83,24 +81,8 @@ mark {
 small {
   font-size: 80%;
 }
-sub,
-sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-sup {
-  top: -.5em;
-}
-sub {
-  bottom: -.25em;
-}
 img {
   border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
 }
 figure {
   margin: 1em 40px;
@@ -191,14 +173,7 @@ textarea {
 optgroup {
   font-weight: bold;
 }
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-td,
-th {
-  padding: 0;
-}
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -228,9 +203,6 @@ th {
     border: 1px solid #999;
 
     page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
   }
   img {
     page-break-inside: avoid;
@@ -1427,9 +1399,6 @@ pre code {
     margin-left: 0;
   }
 }
-table {
-  background-color: transparent;
-}
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1476,8 +1445,7 @@ input[type="range"] {
   display: block;
   width: 100%;
 }
-select[multiple],
-select[size] {
+select[multiple] {
   height: auto;
 }
 input[type="file"]:focus,
@@ -1649,8 +1617,7 @@ select.input-sm {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-sm,
-select[multiple].input-sm {
+textarea.input-sm {
   height: auto;
 }
 .form-group-sm .form-control {
@@ -1686,8 +1653,7 @@ select.input-lg {
   height: 46px;
   line-height: 46px;
 }
-textarea.input-lg,
-select[multiple].input-lg {
+textarea.input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
@@ -2390,10 +2356,6 @@ input[type="button"].btn-block {
 .collapse.in {
   display: block;
 }
-
-tbody.collapse.in {
-  display: table-row-group;
-}
 .collapsing {
   position: relative;
   height: 0;
@@ -2632,9 +2594,6 @@ select.input-group-lg > .input-group-btn > .btn {
   height: 46px;
   line-height: 46px;
 }
-textarea.input-group-lg > .form-control,
-textarea.input-group-lg > .input-group-addon,
-textarea.input-group-lg > .input-group-btn > .btn,
 select[multiple].input-group-lg > .form-control,
 select[multiple].input-group-lg > .input-group-addon,
 select[multiple].input-group-lg > .input-group-btn > .btn {
@@ -2654,14 +2613,6 @@ select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
   height: 30px;
   line-height: 30px;
-}
-textarea.input-group-sm > .form-control,
-textarea.input-group-sm > .input-group-addon,
-textarea.input-group-sm > .input-group-btn > .btn,
-select[multiple].input-group-sm > .form-control,
-select[multiple].input-group-sm > .input-group-addon,
-select[multiple].input-group-sm > .input-group-btn > .btn {
-  height: auto;
 }
 .input-group-addon,
 .input-group-btn,
@@ -3893,14 +3844,6 @@ button.list-group-item-danger.active:focus {
 @media print {
   .visible-print {
     display: block !important;
-  }
-  table.visible-print {
-    display: table !important;
-  }
-
-  th.visible-print,
-  td.visible-print {
-    display: table-cell !important;
   }
 }
 .visible-print-block {
