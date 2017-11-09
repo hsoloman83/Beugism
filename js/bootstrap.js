@@ -458,29 +458,6 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-
-// ---
-
-// Jquery binding per html element
-// $('.js-btn-back').on('click', function() {
-//   console.log('hello');
-// });
-
-// Native binding per html element
-// document.querySelectorAll('.js-btn-back').forEach(function(ele) {
-//   ele.addEventListener('click', function() {
-//     console.log('hello');
-//   })
-// });
-
-// -----
-
-// Jquery single event using checks
-// $(document).on('click', '.js-btn-back', function() {
-//   window.history.back();
-// });
-
-
 // Native single event using checks
 document.addEventListener('click', function(e) {
   if (e.target.matches('.js-btn-back')) {
@@ -488,7 +465,15 @@ document.addEventListener('click', function(e) {
   }
 });
 
-
-// $(document).on('click', '.js-btn-back', function() {
-//   window.history.back();
+// $(document).ready(function(e) {
+//    var h = $('nav').height();
+//    $('body').animate({ paddingTop: h });
 // });
+
+var nextHeight = 85;
+$('body').css('paddingTop', nextHeight);
+
+$(document).on('click', '.navbar-toggle', function (e) {
+  nextHeight = (nextHeight == 221 ? 85 : 221);
+  $('body').animate({ paddingTop: nextHeight }, 350);
+});

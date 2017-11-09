@@ -225,6 +225,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+
 }
 input,
 button,
@@ -372,7 +373,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  /*margin-top: 20px;*/
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -2742,7 +2743,7 @@ select.input-group-lg > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 85px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -3672,14 +3673,14 @@ button.list-group-item-danger.active:focus {
   }
 }
 
-.top-images{
-  margin-top: 0;
+/*.top-images{
+  margin-top: 100px;
 }
 @media (max-width: 991px) {
   .top-images{
-  margin-top: 30px;
+  margin-top: 70px;
   }
-}
+}*/
 .rollover {
     position: relative;;
 }
