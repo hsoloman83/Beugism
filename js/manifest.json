@@ -1,4 +1,11 @@
 {
   "short_name": "Beugism",
-  "name": "Beugism"
+  "name": "Beugism",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/ico",
+      "sizes": "16x16"
+    }
+  ]
 }
